@@ -1,3 +1,8 @@
+<!--
+* You can also use bootstrap  icons available at icons.getbootstrap.com. I´ve got a different approach. 
+* To make the card less wide , I used a custom style on for screem > 800px
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,49 +14,50 @@
     <title>Pricing Card</title>
   </head>
   <body>
-<h1 class="d-flex justify-content-center align-items-center mt-5">Guitar Lessons</h1>
-    <div class="d-flex justify-content-center align-items-center mt-5">
+  <h1 class="d-flex justify-content-center align-items-center mt-5">Guitar Lessons</h1>
+
       <div class="container">
-        <div class="d-flex justify-content-center align-items-center card-container">
-          <div class="card me-2 shadow w-25">
-            <div class="card-body">
-              <h5 class="card-title">Free</h5>
-              <p>For Beginners</p>        
-              <h4>$30</h4>
-              <br>
-              <p>&check; Limited Recorded Lessons </p>
-              <p>&check; 5 Downloads of Exercises per Week</p>
-              <p>&check; 1 Live Lesson per Week</p>
-              <p>&check; 2 Guitar Pro Tabs per Month</p>
-              <br>
-              <br>
-              <div class="d-grid vstack gap-3">
-                <button class="btn btn-dark">Subscribe</button>
-              </div><!--button div-->
-            </div><!--body div-->
-          </div><!--card div-->
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="card rounded-4 me-2 shadow border-0 mb-5">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Free</h5><!--fw = font weight-->
+                <p class="text-muted">For Casual Learners</p>  
+                <h3 class="mb-5">$0</h4>
+                <ul class="list-group list-group-flush fs-5 mb-5 vstack gap-2"><!--vstack & gap-2 adds spacing between th li´s-->
+                  <li class="list-group-item border-0">&check; Limited Recorded Lessons</li><!--border-0 removes the botton border of each li-->
+                  <li class="list-group-item border-0">&check; 5 Exercises per Week</li>
+                  <li class="list-group-item border-0">&check; 1 Live Lesson per Week</li>
+                  <li class="list-group-item border-0">&check; 2 Guitar Pro Tabs per Month</li>
+                </ul>
+                  <div class="d-grid vstack gap-3">
+                    <button class="mt-5 btn btn-dark rounded-3">Subscribe</button>
+                  </div><!--button div-->
+              </div><!--div tittle-->
+            </div><!--div card--> 
+          </div><!--div col-md-6-->
 
-          <div class="card me-2 shadow w-25">
-            <div class="card-body bg-dark text-white rounded">
-              <h5 class="card-title">Pro</h5>
-              <p>For Agencies</p>        
-              <h4>$100</h4>
-              <br>
-              <p>&check; Unlimited Access to Recorded Lessos</p>
-              <p>&check; Unlimited Exercise Downloads</p>
-              <p>&check; 5 Live Lessons per Week</p>
-              <p>&check; 10 Guitar Pro Tabs per Month</p>
-              <br>
-              <br>
-              <div class="d-grid vstack gap-3">
-                <button class="btn btn-light">Subscribe</button>
-              </div><!--div button-->
-            </div><!--div body-->
-          </div><!--main div-->
-        </div>
-      </div>
+          <div class="col-md-6 ">
+            <div class="card  text-bg-dark  rounded-4 me-2 shadow border-0 mb-5">
+              <div class="card-body ">
+                <h5 class="card-title fw-bold">Pro</h5><!--fw = font weight-->
+                <p class="text-white">For Avid Learners </p>  
+                <h3 class="mb-5">$50</h4>
+                <ul class="list-group list-group-flush fs-5 mb-5 vstack gap-2"><!--vstack & gap-2 adds spacing between th li´s-->
+                  <li class="list-group-item border-0 text-bg-dark">&check; Unlimited Access to Lessos</li><!--border-0 removes the botton border of each li-->
+                  <li class="list-group-item border-0 text-bg-dark">&check; Unlimited Exercise Downloads</li>
+                  <li class="list-group-item border-0 text-bg-dark">&check; 5 Live Lessons per Week</li>
+                  <li class="list-group-item border-0 text-bg-dark">&check; 10 Guitar Pro Tabs per Month</li>
+                </ul>
+                  <div class="d-grid vstack gap-3">
+                    <button class="mt-5 btn btn-light rounded-3">Subscribe</button>
+                  </div><!--button div-->
+              </div><!--div tittle-->
+            </div><!--div card--> 
+          </div><!--div col-md-6-->
 
-    </div>
+        </div><!--div row mt-5-->
+      </div><!--div container-->
     
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
