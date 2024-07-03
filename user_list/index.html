@@ -1,0 +1,207 @@
+<!--
+Questions: 
+- buttons to switch will be in a flex box because I want to justify it to the end(?) 
+- data-bs-theme-value="dark" está relacionado com o arq. js que colamos aqui. 
+Mas por quê e como?
+- align-items-center will align users on center. 
+- Para usar esta classe justify-content-end, eu tenho que necessariamente usar d-flex?
+- Flexbox because I wanna align img to the text next to each other in a row
+- Pesquisar: img-fluid
+- Para que servem estas classes?  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Email: john@gmail.com
+--> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>User List</title>
+  </head>
+  <body>
+    <header class="mb-5">
+      <div class="container mt-5">
+        <div class="d-flex justify-content-end">
+          <div class="btn-group">
+            <button class="btn btn-secondary btn-sm" data-bs-theme-value="dark">Dark</button>
+            <button class="btn btn-light btn-sm" data-bs-theme-value="light">Light</button>            
+          </div><!--div btn group-->
+        </div><!--d-flex justify-content-end-->
+        <h1 class="mb-4">Users</h1>
+        
+        <!--A row  because we will use columns to put search bar and navbars side by side-->
+        <!--search bar-->
+        <div class="row">
+          <div class="col-md-4">
+            <input type="text" class="form-control form-control-lg" placeholder="Search Users">
+          </div><!--input div-->
+        <!--navbar-->
+        <div class="col-md-8 user-menu d-flex justify-content-end align-items-center">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-bg-primary rounded-3">New Users</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Moderators</a>
+            </li>
+          </ul>
+        </div><!--navbar-->
+        </div>
+
+      </div><!--div container-->
+    </header>
+
+    <!--<main> because it is the main area of the page-->
+    <main>
+      <div class="container">
+        <!--Row 1-->
+        <div class="row ">
+          <div class="col-md-4">
+            <div class="card mb-3 h-100"  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Email: john@gmail.com">
+              <div class="card-body">
+                <div class="d-flex gap-3 mt-3">
+                  <div class="user-img">
+                    <img src="https:randomuser.me/api/portraits/men/75.jpg" class="img-fluid rounded-circle" alt="man">
+                  </div><!--user-img div-->
+                  <div class="user-info">
+                    <h4>John Doe</h4>
+                    <h6>Troy MI</h6>
+                    <span class="badge bg-primary">Nature</span>
+                    <span class="badge bg-primary">Music</span>
+                    <span class="badge bg-primary">Sports</span>
+                  </div><!--user info div-->
+                </div><!--d-flex-gap3-->
+              </div><!--card body-->
+            </div><!--card mb-3-->
+          </div><!--col-md-4-->
+
+          <div class="col-md-4">
+            <div class="card mb-3 h-100" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Email: leila@gmail.com">
+              <div class="card-body">
+                <div class="d-flex gap-3 mt-3">
+                  <div class="user-img">
+                    <img src="https:randomuser.me/api/portraits/women/76.jpg" class="img-fluid rounded-circle" alt="woman">
+                  </div><!--user-img div-->
+                  <div class="user-info">
+                    <h4>Leila Rose</h4>
+                    <h6>Toronto ON</h6>
+                    <span class="badge bg-primary">Astronomy</span>
+                    <span class="badge bg-primary">Fashion</span>
+                    <span class="badge bg-primary">Animals</span>
+                  </div><!--user info div-->
+                </div><!--d-flex-gap3-->
+              </div><!--card body-->
+            </div><!--card mb-3-->
+          </div><!--col-md-4-->
+
+          <div class="col-md-4">
+            <div class="card mb-3 h-100" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Email: mark@gmail.com">
+              <div class="card-body">
+                <div class="d-flex gap-3 mt-3">
+                  <div class="user-img">
+                    <img src="https:randomuser.me/api/portraits/men/77.jpg" class="img-fluid rounded-circle" alt="man">
+                  </div><!--user-img div-->
+                  <div class="user-info">
+                    <h4>Mark Hopkus</h4>
+                    <h6>San Diego CA</h6>
+                    <span class="badge bg-primary">Bass</span>
+                    <span class="badge bg-primary">UFC</span>
+                    <span class="badge bg-primary">Math</span>
+                  </div><!--user info div-->
+                </div><!--d-flex-gap3-->
+              </div><!--card body-->
+            </div><!--card mb-3-->
+          </div><!--col-md-4-->
+
+          <div class="col-md-4">
+            <div class="card my-3 h-100 mt-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Email: rodrigo@gmail.com">
+              <div class="card-body">
+                <div class="d-flex gap-3 mt-3">
+                  <div class="user-img">
+                    <img src="https:randomuser.me/api/portraits/men/78.jpg" class="img-fluid rounded-circle" alt="man">
+                  </div><!--user-img div-->
+                  <div class="user-info">
+                    <h4>Rodrigo Almeida</h4>
+                    <h6>São Paulo SP</h6>
+                    <span class="badge bg-primary">Soccer</span>
+                    <span class="badge bg-primary">Tech</span>
+                    <span class="badge bg-primary">Eletronics</span>
+                  </div><!--user info div-->
+                </div><!--d-flex-gap3-->
+              </div><!--card body-->
+            </div><!--card mb-3-->
+          </div><!--col-md-4-->
+
+          <div class="col-md-4">
+            <div class="card my-3 h-100" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Email: amelia@gmail.com">
+              <div class="card-body">
+                <div class="d-flex gap-3 mt-3">
+                  <div class="user-img">
+                    <img src="https:randomuser.me/api/portraits/women/79.jpg" class="img-fluid rounded-circle" alt="woman">
+                  </div><!--user-img div-->
+                  <div class="user-info">
+                    <h4>Amelia Lacombe</h4>
+                    <h6>Quebec QC</h6>
+                    <span class="badge bg-primary">Fashion</span>
+                    <span class="badge bg-primary">Chemistry</span>
+                    <span class="badge bg-primary">Astrology</span>
+                  </div><!--user info div-->
+                </div><!--d-flex-gap3-->
+              </div><!--card body-->
+            </div><!--card mb-3-->
+          </div><!--col-md-4-->
+
+          <div class="col-md-4">
+            <div class="card my-3 h-100" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Email: ana@gmail.com">
+              <div class="card-body">
+                <div class="d-flex gap-3 mt-3">
+                  <div class="user-img">
+                    <img src="https:randomuser.me/api/portraits/women/81.jpg" class="img-fluid rounded-circle" alt="woman">
+                  </div><!--user-img div-->
+                  <div class="user-info">
+                    <h4>Ana McKagan</h4>
+                    <h6>Dallas TX</h6>
+                    <span class="badge bg-primary">Architecture</span>
+                    <span class="badge bg-primary">Physics</span>
+                    <span class="badge bg-primary">Astronomy</span>
+                  </div><!--user info div-->
+                </div><!--d-flex-gap3-->
+              </div><!--card body-->
+            </div><!--card mb-3-->
+          </div><!--col-md-4-->
+
+
+        </div>
+      </div><!--container div-->
+
+    
+    </main>  
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/darkmodetoggle.js"></script>
+    <script>
+      //setting the popovers... graba all elements that has the data attrribute and then...
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+
+      //...map throught and initialize each one and adds a new instace of Bootstrap to each one
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEL) => new bootstrap.Popover(popoverTriggerEL)
+      );
+    </script>
+
+  </body>
+</html>
+
+
+
+<!-- ATENÇÃO: RECOMEÇAR DAQUI revendo a aula para 
+se certificar que o nava bar está dentro da DIV correta, já que 
+os itens não estão alinhados à direta. -->
