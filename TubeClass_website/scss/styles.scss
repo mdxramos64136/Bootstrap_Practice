@@ -1,0 +1,79 @@
+.download{
+    background: url('../images/bg2.webp') center center no-repeat;
+    background-size: cover;
+}
+
+.map iframe{
+    left:0;
+    top: 0;
+    height: 400px;
+    width: 100%; /*map goes all the way across the container*/
+    border: none;
+}
+
+.navbar .btn-outline-light:hover{
+    color: red; /* Altera a cor do texto para vermelho */
+    background-color: white; /* Mantém o fundo branco */
+    border-color: red; /* Define uma borda fina vermelha */
+    border-width: 3px;
+}
+
+.navbar {
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-sticky{
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(164, 63, 63, 0.5)
+}
+
+.header{
+    background: url(../images/background_red.png) center center no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.hero {
+    min-height: 80vh; /* Define uma altura mínima */
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+
+
+
+.modal-dialog {
+    max-width: 1040px; /*makes the modal a bit wider*/
+}
+
+// Will be aplyed to anything under that
+@media(max-width: 1000px){
+    .hero .image-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.hero .text-container{
+    text-align: center;
+}
+
+/*Notes:
+ * background: This CSS property is a shortcut that can set several 
+ background properties at once. In this case: 
+    - url(defines the path of the image to be used as bg). 
+    - center center: Defines the position of the background image.
+    The first center refers to the horizontal position and 
+    the second center refers to the vertical position. 
+    This means that the background image will be centered both 
+    horizontally and vertically within the element.
+    - no-repeat: Indicates that the background image should not be 
+    repeated. Without this, the image would be repeated 
+    both horizontally and vertically to fill the element.
+
+* @media(max-width:1000px will be aplyed to the elements with 
+the .image-container class that are descendants of an element 
+with the .hero class.
+ */
