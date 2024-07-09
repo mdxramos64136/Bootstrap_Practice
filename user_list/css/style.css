@@ -1,0 +1,7 @@
+/*To be aplyied on everything under 767*/
+@media(max-width: 767px){
+    .user-menu{
+        justify-content: center !important; /*!important because it will overwrite BS value*/
+        margin-top: 20px;
+    }
+}
