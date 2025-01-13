@@ -1,23 +1,28 @@
 <!--
-* You can also use bootstrap  icons available at icons.getbootstrap.com. I´ve got a different approach. 
-* To make the card less wide , I used a custom style on for screem > 800px
+* You can also use bootstrap  icons available at icons.getbootstrap.com. 
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!--mian language of the page-->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--responsivity on mobile devices-->
+    <meta name="description" content="Learn guitar with affordable lessons. Check out reviews, ratings, and pricing plans to find the best option for you." />
     <!--Icons from fontawesome: necessary to put the star and the magnifying glass-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Affordable Guitar Lessons | Reviews & Pricing</title>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Pricing Card</title>
   </head>
   <body>
   <h1 class="d-flex justify-content-center align-items-center mt-5">Guitar Lessons</h1>
-
+<nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Guitar Lessons</li>
+      </ol>
+    </nav>
       <div class="container">
 <div class="card bg-light border-0 shadow-lg rounded-4 mt-5">
         <div class="card-body">
@@ -52,35 +57,35 @@
             <div class="col-12 vstack gap-2"><!--gap-2 will put margim between the scores-->
               <h5>Review</h5>
               <div class="d-flex align-items-center gap-1">
-                <span>5</span> <i class="fas fa-star text-warning"></i>
+                <span>5</span> <i class="fas fa-star text-warning" alt="star icon"></i>
                 <div class="progress ms-3" style="height: 10px; width: 100%">
                   <div class="progress-bar bg-dark" style="width:80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div><!--this is the fill-->
                 </div>
               </div>
 
               <div class="d-flex align-items-center gap-1">
-                <span>4</span> <i class="fas fa-star text-warning"></i>
+                <span>4</span> <i class="fas fa-star text-warning" alt="star icon"></i>
                 <div class="progress ms-3" style="height: 10px; width: 100%">
                   <div class="progress-bar bg-dark" style="width:60%" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div><!--this is the fill-->
                 </div>
               </div>
 
               <div class="d-flex align-items-center gap-1">
-                <span>3</span> <i class="fas fa-star text-warning"></i>
+                <span>3</span> <i class="fas fa-star text-warning" alt="star icon"></i>
                 <div class="progress ms-3" style="height: 10px; width: 100%">
                   <div class="progress-bar bg-dark" style="width:10%" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div><!--this is the fill-->
                 </div>
               </div>
 
               <div class="d-flex align-items-center gap-1">
-                <span>2</span> <i class="fas fa-star text-warning"></i>
+                <span>2</span> <i class="fas fa-star text-warning" alt="star icon"></i>
                 <div class="progress ms-3" style="height: 10px; width: 100%">
                   <div class="progress-bar bg-dark" style="width:15%" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div><!--this is the fill-->
                 </div>
               </div>
 
               <div class="d-flex align-items-center gap-1">
-                <span>1</span> <i class="fas fa-star text-warning"></i>
+                <span>1</span> <i class="fas fa-star text-warning" alt="star icon"></i>
                 <div class="progress ms-3" style="height: 10px; width: 100%">
                   <div class="progress-bar bg-dark" style="width:5%" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div><!--this is the fill-->
                 </div>
@@ -103,7 +108,7 @@
           <div class="col-md-6">
             <div class="card rounded-4 me-2 shadow border-0 mb-5">
               <div class="card-body">
-                <h5 class="card-title fw-bold">Free</h5><!--fw = font weight-->
+                <h3 class="card-title fw-bold">Free</h5><!--fw = font weight-->
                 <p class="text-muted">For Casual Learners</p>  
                 <h3 class="mb-5">$0</h4>
                 <ul class="list-group list-group-flush fs-5 mb-5 vstack gap-2"><!--vstack & gap-2 adds spacing between th li´s-->
@@ -122,7 +127,7 @@
           <div class="col-md-6 ">
             <div class="card  text-bg-dark  rounded-4 me-2 shadow border-0 mb-5">
               <div class="card-body ">
-                <h5 class="card-title fw-bold">Pro</h5><!--fw = font weight-->
+                <h3 class="card-title fw-bold">Pro</h5><!--fw = font weight-->
                 <p class="text-white">For Avid Learners </p>  
                 <h3 class="mb-5">$50</h4>
                 <ul class="list-group list-group-flush fs-5 mb-5 vstack gap-2"><!--vstack & gap-2 adds spacing between th li´s-->
