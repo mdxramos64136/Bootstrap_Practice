@@ -8,7 +8,7 @@ function userScroll(){
         // (y axis). If that value (scrolY) is above 50, the clas bg-dark 
         // will be add to the navbar, selected by a class in there(.navbar).
         // if not, the class will be removed.
-        if(window.scrollY > 50){
+        if(window.scrollY > 80){
             navbar.classList.add('bg-dark');
             navbar.classList.add('navbar-sticky'); //navbar-sticky is a custom class. Check styles.scss
             //console.log(window.scrollY);

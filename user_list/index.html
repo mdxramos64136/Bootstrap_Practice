@@ -1,13 +1,72 @@
 <!--
 Questions: 
-- buttons to switch will be in a flex box because I want to justify it to the end(?) 
-- data-bs-theme-value="dark" está relacionado com o arq. js que colamos aqui. 
+
+-> buttons to switch will be in a flex box because I want to justify it to the end:
+d-flex: Esta classe aplica o display flex ao elemento, permitindo o uso das propriedades do flexbox.
+justify-content-end: Esta classe alinha o conteúdo flexível no final do container (à direita).
+O Flexbox é ideal para layouts que necessitam de alinhamento e distribuição espacial dinâmicos.
+Suas principais propriedades são:
+
+-> btn-group é uma classe do Bootstrap utilizada para agrupar uma série de botões.
+Quando você aplica btn-group a um contêiner, ele estiliza os botões contidos para 
+parecerem como um grupo coeso.
+Características do btn-group:
+  -Agrupamento visual: Os botões dentro de um btn-group aparecem conectados, 
+  sem margens entre eles, dando uma aparência de um único componente.
+  - Comportamento unificado: Permite que botões funcionem juntos, por exemplo, 
+  em grupos de opções ou ferramentas.
+  - Responsividade: O Bootstrap garante que os btn-group se adaptem bem 
+  a diferentes tamanhos de tela.
+
+-> arial-label é uma propriedade de acessibilidade usada para fornecer um rótulo 
+de texto para elementos interativos, como botões, links ou áreas de navegação,
+fornecendo uma descrição alternativa que pode ser lida por leitores de tela, 
+ajudandousuários com deficiência visual a entender a função do elemento.
+
+->data-bs-theme-value="dark" está relacionado com o arq. js que colamos aqui. 
 Mas por quê e como?
-- align-items-center will align users on center. 
-- Para usar esta classe justify-content-end, eu tenho que necessariamente usar d-flex?
-- Flexbox because I wanna align img to the text next to each other in a row
-- Pesquisar: img-fluid
-- Para que servem estas classes?  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Email: john@gmail.com
+O atributo data-bs-theme-value é uma convenção utilizada pelo Bootstrap 
+para identificar e aplicar diferentes temas (como "dark" ou "light") a 
+elementos específicos. Quando um botão com data-bs-theme-value="dark" é 
+clicado, ele pode ativar um script JavaScript que altera a classe do body 
+ou de outros elementos para aplicar o tema escuro.
+
+-> Para usar esta classe justify-content-end, eu tenho que necessariamente
+usar d-flex? 
+SIM! A classe justify-content-end faz parte do sistema de flexbox do Bootstrap.
+Flexbox é uma abordagem de layout que permite que você distribua espaço 
+ao longo de um contêiner e alinhe itens dentro desse contêiner de 
+diferentes maneiras.
+d-flex: aplica o estilo 'display: flex' ao elemento, tornando-o um contêiner
+ flexível. Isso ativa todas as propriedades do flexbox para esse elemento.
+justify-content-end: alinha os itens dentro de um contêiner flexível no 
+final do eixo principal (horizontal por padrão).
+
+-> img-fluid torna as imagens responsivas. Ela aplica o seguinte estilo CSS à imagem:
+  - max-width: 100%; garante que a largura máxima da imagem nunca exceda 
+  a largura de seu contêiner pai. Se o contêiner for redimensionado,
+  a imagem redimensionará proporcionalmente para caber dentro do contêiner,
+  mantendo suas proporções.
+  
+  - height: auto; Isso mantém a proporção da imagem,
+  ajustando a altura automaticamente com base na largura
+
+-> Para que servem estas classes?  
+  - data-bs-container="body" : Este atributo especifica onde o popover 
+  será anexado no DOM. Quando você define data-bs-container="body", 
+  está instruindo o Bootstrap a anexar o popover diretamente ao <body> 
+  do documento.
+
+  - data-bs-toggle="popover" : Quando você adiciona data-bs-toggle="popover" a um elemento, 
+  o Bootstrap sabe que deve TRANSFORMAR ESTE ELEMENTO EM UM POPOVER 
+  ao interagir com ele (por exemplo, ao clicar).
+
+  - data-bs-placement="top" :  especifica a posição do popover em 
+  relação ao elemento ao qual ele está anexado. Outros valores possíveis incluem 
+  bottom, left, right, entre outros.
+
+  - data-bs-content="Email: john@gmail.com :Este atributo define o CONTEÚDO do popover
+
 --> 
 <!DOCTYPE html>
 <html lang="en">
@@ -201,7 +260,3 @@ Mas por quê e como?
 </html>
 
 
-
-<!-- ATENÇÃO: RECOMEÇAR DAQUI revendo a aula para 
-se certificar que o nava bar está dentro da DIV correta, já que 
-os itens não estão alinhados à direta. -->
